@@ -1,1 +1,1 @@
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e2aaace0-24ef-4ae8-bed4-d8cb2e34acd9/06b8244d-4e1a-4183-81ab-5ad8b4c4fcde/Untitled.png)
+![스크린샷 2024-01-01 144345](https://github.com/722dydwns/CS-Study-for-tech-interview/assets/39732720/9559965e-5867-4b67-9d31-9edc73229ab0)
