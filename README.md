@@ -1,7 +1,20 @@
 ### **⬛ CS Study for tech interview**
 
-**네트워크**
 
-1. **HTTP**
-- [HTTP 관련 개념 정리](https://github.com/722dydwns/CS-Study-for-tech-interview/blob/main/Network/HTTP%20%EA%B4%80%EB%A0%A8/HTTP.md)
-- [HTTP 관련 면접 질문 정리](https://github.com/722dydwns/CS-Study-for-tech-interview/blob/main/Network/HTTP%20%EA%B4%80%EB%A0%A8/HTTP%20%EB%A9%B4%EC%A0%91.md)
+# 네트워크 섹션
+
+### **1) 1주차 CS 스터디**
+
+: HTTP 관련 내용 
+
+(1) 필기 내용
+
+(2) 면접 질문 모음 
+
+### **2) 2주차 CS 스터디**
+
+: URL 입력 시 일어나는 일, 쿠키 세션 토큰 웹 스토리지 등 비교 
+
+(1) 필기 내용
+
+(2) 면접 질문 모음
