@@ -1,5 +1,4 @@
-https://seasoned-meal-46e.notion.site/1-HTTP-0d374b52de184874bbacea08639b22a6?pvs=4
-
+[스터디 1주차 | HTTP](https://www.notion.so/1-HTTP-623151e5221c42429a2ab2be923fe965?pvs=21)
 
 ---
 
