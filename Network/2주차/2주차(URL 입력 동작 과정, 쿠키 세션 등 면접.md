@@ -1,3 +1,19 @@
+## **24.01.05 나온 질문 내용 공유**
+
+1번. 세션 동작방식을 설명
+
+2번. 쿠키와 세션의 특징 및 활용 사례
+
+3번. 쿠키와 웹 스토리지의 차이점
+
+4번. 쿠키를 전송 시 모든 정보가 전송되는지 - 서버의 경로에 따라 필요한 데이터를 선택해서 쿠키에 담는다.
+
+5번. 브라우저에서 URL 에서 발생하는일
+
+6번.  3-way-handshaking 의 각 과정의 이름과 의미
+
+7번. 쿠키와 세션의 장단점
+
 # 네트워크 동작 과정
 
 **✅ 웹 브라우저에 [www.naver.com](http://www.naver.com) 을 쳤을 때 생기는 과정, 그리고 DNS까지 설명해주세요.**
@@ -58,7 +74,7 @@ Json web token 의 약자로 모바일이나 웹의 사용자 인증을 위해 �
 
 2) 해커가 훔친 쿠키 이용한 요청 보내면 서버는 올바른 사용자가 보낸 요청인지 알 수 없다.
 
-**✅ 세션 기반 인증과 토큰 기반 인증은 각각 어느 경우에 더 적합한가 ?**
+**✅ 세션 기반 인증과 토큰 기반 인증은 각각 어느 경우에 더 적합한가 ? // 이게 먼 소리냐 ㅡㅡ**
 
 - 단일 도메인이라면 세션 기반 인증이 적합하고
 - 아니라면, 토큰 기반 인증 사용이 적합하다
@@ -158,55 +174,6 @@ Access Token(JWT)를 통한 인증 방식의 문제는 만일 제 3자에게 탈
 이때 “그러면 유효기간을 짧게 하면서 좋은 방법이 있지는 않을까?”라는 질문의 답이 바로 “Refresh Token”입니다.
 
 Refresh Token은 Access Token과 똑같은 형태의 JWT입니다. 처음에 로그인을 완료했을 때 Access Token과 동시에 발급되는 Refresh Token은 긴 유효기간을 가지면서, Access Token이 만료됐을 때 새로 발급해주는 열쇠가 됩니다(여기서 만료라는 개념은 그냥 유효기간을 지났다는 의미입니다.)
-
-# **[❓](https://emojipedia.org/question-mark/)OAuth란 무엇인가요?**
-
-각종 웹, 모바일 어플리케이션에서 타사의 API를 사용하고 싶을 때 권한 획득을 위한 프로토콜입니다.
-
-인터넷 사용자들이 비밀번호를 제공하지 않고 다른 웹사이트 상의 자신들의 정보에 대해 웹사이트나 애플리케이션의 접근 권한을 부여할 수 있는 공통적인 수단으로서 사용되는, 접근 위임을 위한 개방형 표준입니다.
-
-## **[💡](https://emojipedia.org/light-bulb/)꼬리질문) OAuth의 장점을 설명해주세요.**
-
-1. 이용하려는 서비스마다 회원가입을 일일이 다 할 필요없이 기존의 사용하던 타사의 정보를 이용(goole, facebook 등)하여 로그인을 진행 할 수 있습니다.
-2. 타사의 정보를 통해 특정 사이트를 이용한다는 것은 매우 위험할 수 있으나 직접 타사의 아이디와 비밀번호를 입력하던 예전 방식보다 안전한 사용을 제공합니다.
-3. 정보는 회원 정보뿐만 아니라 기타 API에 대한 정보에도 접근이 가능합니다
-
-## **[💡](https://emojipedia.org/light-bulb/)꼬리질문) OAuth의 흐름을 설명해주세요.**
-
-OAuth 동작에 관여하는 참여자는 크게 세 가지로 구분할 수 있습니다.
-
-- Resource Server : Client가 제어하고자 하는 자원을 보유하고 있는 서버입니다. Facebook, Google, Twitter 등이 이에 속합니다.
-- Resource Owner : 자원의 소유자입니다. Client가 제공하는 서비스를 통해 로그인하는 실제 유저가 이에 속합니다.
-- Client : Resoure Server에 접속해서 정보를 가져오고자 하는 클라이언트(웹 어플리케이션)입니다.
-
-## **첫번째로, Client(웹 어플리케이션)가 Resource Server를 이용하기 위해서는 자신의 서비스를 등록함으로써 사전 승인을 받아야 합니다.**
-
-등록 절차를 통해 세 가지 정보를 부여받습니다.
-
-1. **Client ID** : 클라이언트 웹 어플리케이션을 구별할 수 있는 식별자이며, 노출이 무방합니다.
-2. **Client Secret** : Client ID에 대한 비밀키로서, 절대 노출해서는 안 됩니다.
-3. **Authorized redirect URL** : Authorization Code를 전달받을 리다이렉트 주소입니다.
-
-## **두번째로 Resource Owner의 승인을 받습니다.**
-
-Resource Owner는 Resource Server에 접속하여 로그인을 수행합니다. 로그인이 완료되면 Resource Server는 Query String으로 넘어온 파라미터들을 통해 Client를 검사합니다.
-
-- 파라미터로 전달된 Client ID와 동일한 ID 값이 존재하는지 확인합니다.
-- 해당 Client ID에 해당하는 Redirect URL이 파라미터로 전달된 Redirect URL과 같은지 확인합니다.
-
-검증이 마무리 되면 Resource Server는 Resource Owner에게 다음과 같은 질의를 보냅니다.
-
-- 명시한 scope에 해당하는 권한을 Client에게 정말로 부여할 것인가?
-
-허용한다면 최종적으로 Resource Owner가 Resource Server에게 Client의 접근을 승인하게 됩니다.
-
-## **세번째로 Resource Server의 승인입니다.**
-
-Resource Owner의 승인이 마무리 되면 명시된 Redirect URL로 클라이언트를 리다이렉트 시킵니다. 이 때 Resource Server는 Client가 자신의 자원을 사용할 수 있는 Access Token을 발급하기 전에, 임시 암호인 Authorization Code를 함께 발급합니다.
-
-Client는 해당 토큰을 서버에 저장해두고, Resource Server의 자원을 사용하기 위한 API 호출시 해당 토큰을 헤더에 담아 보냅니다.
-
-이후 Access Token을 헤더에 담아 API를 호출하면, 해당 계정과 연동된 Resource Server의 풍부한 자원 및 기능들을 내가 만든 웹 어플리케이션에서 사용할 수 있습니다.
 
 # **[❓](https://emojipedia.org/question-mark/)JWT에 대해 설명해주세요**
 
