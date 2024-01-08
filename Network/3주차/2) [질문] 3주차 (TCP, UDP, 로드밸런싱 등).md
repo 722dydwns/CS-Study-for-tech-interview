@@ -1,0 +1,153 @@
+# TCP, UDP
+
+**✅ TCP와 UDP에 대해서 설명해주세요** 
+
+- TCP는 신뢰성 있는 통신을 위해 사용하는 연결 지향형 프로토콜로서 높은 신뢰성을 보장하지만, UDP보다는 속도가 느립니다.
+- 3-way, 4-way 핸드셰이크로 서버-클라이언트가 1대 1로 통신을 하고, 흐름제어와 혼잡 제어가 이루어지게 됩니다.
+- 반면, UDP는 비연결형 프로토콜로서 손상된 데이터에 대해서 재전송하지 않아 신뢰성이 낮다.
+
+그러나  TCP보다 속도는 빨라서 스트리밍 같은 서비스에 주로 사용된다. 마지막으로 1:1, 1:N, N:M 으로 연결 가능하다.
+
+**✅ TCP/UDP에 대해서 설명해주세요.**
+
+- TCP와 UDP는 네트워크 통신에서 주로 사용되는 두가지 주요한 프로토콜이다. 이 두 프로토콜은 데이터를 전송하는 방식과 목적에 있어서 다른 특징을 가지고 있다.
+- TCP는 통신을 시작하기 전에 먼저 연결을 설정하고, 통신이 완료되면 연결을 종료하는데 사용된다. 이렇게 연결을 설정하고 종료하는 것은 데이터의 신뢰성과 정확성을 보장하기 위한 중요한 특징이다. 또한, 데이터 전송 중 손실, 중복 및 오류를 감지하고 복구하는 기능을 가지고 있다.
+- UDP는 연결 설정 과정 없이 데이터를 전송하기 때문에 데이터 송수신이 빠르고 간단하다. 하지만 데이터를 전송한 후에 데이터의 손실이나 중복을 검사하거나 복구하지 않는다. 따라서 데이터 손실이나 오류가 발생할 수 있다.
+
+[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASbSURBVHgB7Z0tTytBFIYP914BDiQ4cIADB0EhwYFE8ifq7g/hJ2CRSCQ4kOCobF3ruHk3maS5aSnbdnfPOe/7JE0oCTvTnmc+dvbMsNbr9b5M0PLLBDUSgBwJQI4EIEcCkCMByJEA5EgAciQAORKAHAlAjgQgRwKQIwHIkQDkSAByJAA5EoAcCUCOBCBHApAjAciRAORIAHIkADkSgBwJQI4EIEcCkCMByJEA5EgAciQAOX+MhPX1dTs+Prbt7W3b3d21jY2N6ndgPB7bYDCw4XBor6+v9vHxUb1nIL0Ae3t7dn5+XgV9FhABYuC1v79f/Q4SPD8/28vLi2UmrQA/Cfx34O/wwjXu7u7S9gi/z87O/loyELTr62vb2tqyZcFQcXp6Wv2MXiEb6SaBCDwEWDVFqmykEgABOjo6sqbAtbNJkEaAi4uLRoNfQBmXl5eWhRQCIChlnG6Dk5OTVstrkvACYKLXxJg/D5RZ1hEiE14ABGIVs/26IPgZeoHQAiDwbYz7s4AA0XuB0AIsusizKsrycmRCC+Dhyz84OLDIhBUAra/rHgCgDpGHgbAC7OzsmBc81aUuYQXY3Nw0L3iqS13CCtDFrd8sPNWlLsoIIkcCkBNWAE8JGpGTRcIKgPw9L3iqS13CCvD5+Wle8FSXuoQVAJm8HlK0UAfUJSqhJ4Fvb2/WNcgcjkxoAfDld936oieKhhYAwX96erKuwJ6B6Oni4dcBIEAXvQAC//j4aNEJLwCC30UgUGaGzSIpVgLRC7Q5FKCsLFvG0iwFPzw8tBIUlIGyspDqWcD9/X2jEuDaKCMT6R4GIUBNzAlwzWzBByl3ByNYaK23t7dLP6vHfT6u9/7+bhlZ6/V6X5YYpI0jebRu/mD2wBfSHxCBngAv9ASQ4PDwsErhwvvJE0JGo1EV9H6/72KFsS1SCDAZyFngnh2vVUwSUV4WQUILULZnlR06aMGYqDW1QDN56khZho6+Ghh2DoBgXF1dTZ3koZWvcqWubECdtg0NZUQ+QiakAGjxOA9gHhABj4wXeWyMHgX5/j85Zwi9AXoeD4+n6xJOAASk7nbwkjyCGT0meXg/mcWDYOMsIJwShtaO3mWRHT/odaINCaHmAIsEHyCQOP6tHAHXFKVukSQIsxK4aPDbBnWMdG5ACAHwhUYIfgHzEwwjEXAvQFdHwCzLzc1NiC1jrgXA2I31/Ijbr1HnCEfKuRagq/N/VgXuJLzPB9wKgMBnOITJu8RuBUDXnwHvQ4FLAbDkGrnr/x8MBV7vClwKEHHWPw+vn8mdANlaf8FrL+BOgIytv+Dxs7kSAC0kY+sveOwFXAnQ5bGvbdH0A6m6uBLAw8GPTePtaFk3AmTv/gtYF/A0DLgRgKH1Fzx9VjcCIBuHBU89nRsBkKrFgqfNJm5SwpBGVc7fz/CvWKZRUsk9bS1PvzVMfI+OiiVHApAjAciRAORIAHIkADkSgBwJQI4EIEcCkCMByJEA5EgAciQAORKAHAlAjgQgRwKQIwHIkQDkSAByJAA5EoAcCUCOBCBHApAjAciRAORIAHIkADkSgBwJQI4EIOcfGjV2tEfztqEAAAAASUVORK5CYII=](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASbSURBVHgB7Z0tTytBFIYP914BDiQ4cIADB0EhwYFE8ifq7g/hJ2CRSCQ4kOCobF3ruHk3maS5aSnbdnfPOe/7JE0oCTvTnmc+dvbMsNbr9b5M0PLLBDUSgBwJQI4EIEcCkCMByJEA5EgAciQAORKAHAlAjgQgRwKQIwHIkQDkSAByJAA5EoAcCUCOBCBHApAjAciRAORIAHIkADkSgBwJQI4EIEcCkCMByJEA5EgAciQAOX+MhPX1dTs+Prbt7W3b3d21jY2N6ndgPB7bYDCw4XBor6+v9vHxUb1nIL0Ae3t7dn5+XgV9FhABYuC1v79f/Q4SPD8/28vLi2UmrQA/Cfx34O/wwjXu7u7S9gi/z87O/loyELTr62vb2tqyZcFQcXp6Wv2MXiEb6SaBCDwEWDVFqmykEgABOjo6sqbAtbNJkEaAi4uLRoNfQBmXl5eWhRQCIChlnG6Dk5OTVstrkvACYKLXxJg/D5RZ1hEiE14ABGIVs/26IPgZeoHQAiDwbYz7s4AA0XuB0AIsusizKsrycmRCC+Dhyz84OLDIhBUAra/rHgCgDpGHgbAC7OzsmBc81aUuYQXY3Nw0L3iqS13CCtDFrd8sPNWlLsoIIkcCkBNWAE8JGpGTRcIKgPw9L3iqS13CCvD5+Wle8FSXuoQVAJm8HlK0UAfUJSqhJ4Fvb2/WNcgcjkxoAfDld936oieKhhYAwX96erKuwJ6B6Oni4dcBIEAXvQAC//j4aNEJLwCC30UgUGaGzSIpVgLRC7Q5FKCsLFvG0iwFPzw8tBIUlIGyspDqWcD9/X2jEuDaKCMT6R4GIUBNzAlwzWzBByl3ByNYaK23t7dLP6vHfT6u9/7+bhlZ6/V6X5YYpI0jebRu/mD2wBfSHxCBngAv9ASQ4PDwsErhwvvJE0JGo1EV9H6/72KFsS1SCDAZyFngnh2vVUwSUV4WQUILULZnlR06aMGYqDW1QDN56khZho6+Ghh2DoBgXF1dTZ3koZWvcqWubECdtg0NZUQ+QiakAGjxOA9gHhABj4wXeWyMHgX5/j85Zwi9AXoeD4+n6xJOAASk7nbwkjyCGT0meXg/mcWDYOMsIJwShtaO3mWRHT/odaINCaHmAIsEHyCQOP6tHAHXFKVukSQIsxK4aPDbBnWMdG5ACAHwhUYIfgHzEwwjEXAvQFdHwCzLzc1NiC1jrgXA2I31/Ijbr1HnCEfKuRagq/N/VgXuJLzPB9wKgMBnOITJu8RuBUDXnwHvQ4FLAbDkGrnr/x8MBV7vClwKEHHWPw+vn8mdANlaf8FrL+BOgIytv+Dxs7kSAC0kY+sveOwFXAnQ5bGvbdH0A6m6uBLAw8GPTePtaFk3AmTv/gtYF/A0DLgRgKH1Fzx9VjcCIBuHBU89nRsBkKrFgqfNJm5SwpBGVc7fz/CvWKZRUsk9bS1PvzVMfI+OiiVHApAjAciRAORIAHIkADkSgBwJQI4EIEcCkCMByJEA5EgAciQAORKAHAlAjgQgRwKQIwHIkQDkSAByJAA5EoAcCUCOBCBHApAjAciRAORIAHIkADkSgBwJQI4EIOcfGjV2tEfztqEAAAAASUVORK5CYII=)
+
+**✅ 3-way Handshake와 4-way Handshake 를 설명해주세요**
+
+3-way 는 TCP 연결, 4-way는 TCP 연결 해제 시 사용합니다. 
+
+- 3-way는 서로 연결 잘 되었는지 확인하는 방법이고, 송신자와 수신자가 총 3번에 걸쳐 상호 통신 가능한 상태인지 확인하는 과정입니다.
+- 4-way는 클라이언트가 서버에 연결 해제 통지 후, 상호 4번에 걸쳐 연결 상태를 해지하는 과정입니다.
+
+**✅ Connection Timeout과 Read Timeout의 차이에 대해 설명해주세요**
+
+- **Connection Timeout**은 초기 연결을 할때에 대한 시간 초과가 난 상황을 말하고,
+- **Read timeout**은 데이터를 읽는 동안 대기하는 시간 초과입니다. 서버에서 데이터를 받아오는데 시간 초과가 난 경우입니다.
+
+**✅TCP가 대역폭 사용량을 제어하는 방식에는 어떤 게 있나요?**
+
+- 혼잡 제어로 네트워크 혼잡에 대응
+
+**✅TCP의 Segment에는 어떤 정보들이 들어가나요?**
+
+- TCP 헤더에 내용
+
+**✅ TCP 연결 설정 과정(3단계)과 연결 종료 과정(4단계)이 단계가 차이나는 이유는?**
+
+- 클라이언트가 데이터 전송을 마쳤다고 하더라도
+- 서버는 아직 보낼 데이터가 남을 수 있기 때문에
+- FIN에 대한 ACK만 보내고, 데이터를 모두 전송한 이후에 서버 자신도 FIN 메시지를 보내기 때문이다.
+
+**✅ 만약 서버에서 FIN 플래그를 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN 패킷보다 늦게 도착하는 상황이 발생하면 어떻게 될까?**
+
+- 클라이언트에서 세션을 종료시킨 후 늦게 도착하는 패킷은 drop되고 데이터는 유실된다.
+- 이런 상황에 대비하여 클라이언트는 서버로부터 FIN을 수신하고 일정 시간(default 240sec)동안 세션을 남겨두고 잉여 패킷을 기다린다**. (TIME_WAIT 과정)**
+
+**✅  초기 Sequence Number인 ISN을 0부터 시작하지 않고 난수를 생성해서 설정하는 이유?**
+
+**→  두 통신 호스트가 과거에 사용된 Port 번호 쌍을 사용하는 가능성이 존재한다. 서버에서는 SYN을 보고 패킷을 구분하고, 난수가 아닌 순차적 Number가 전송된다면 이전 Connection으로부터 오는 패킷으로 인식할 수 있다. 이런 문제의 가능성을 줄이기 위해 난수로 ISN을 설정한다.**
+
+**→  0에서 시작하는 ISN은 이어지는 Seq를 쉽게 예측하게 만들어 공격에 취약해진다.**
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e2aaace0-24ef-4ae8-bed4-d8cb2e34acd9/cf7491dd-821e-487e-ad78-b415e266efcc/Untitled.png)
+
+**✅  UDP는 항상 신뢰성을 보장하지 않나요?**
+
+- UDP도 신뢰성을 UDP자체에서 보장하지 않는 것 뿐이지, 개발자가 직접 신뢰성을 보장하도록 할 수 있습니다. HTTP/3의 경우, UDP 기반의 QUIC이라는 프로토콜을 사용합니다. UDP 자체는 신뢰성을 보장하지 않지만, 추가적인 정의를 통해 신뢰성을 보장받을 수 있습니다.
+
+**✅ TCP/IP의 흐름제어/혼잡제어에 대해 설명해보세요**
+
+- **흐름 제어란**  송신 측과 수신 측의 데이터 처리 속도 차이를 해결하기 위한 기법이다.
+
+receiver가 sender에게 현재 자신의 상태를 feedback 하는 것을 통해 eceiver가 packet을 지나치게 많이 받지 않도록 조절한다.
+
+구체적으로 Stop and Wait, Sliding Window, Window 방식이 있다.
+
+Stop and Wait 방식은 매번 전송한 패킷에 대해 확인 응답을 받아야만 그 다음 패킷을 전송하는 방법이다.
+
+Sliding Window 방식은 일정한 윈도우 크기 내에서 한번에 여러 패킷을 송신하고,
+
+한번의 ACK로 수신확인을 하며, 윈도우 크기를 변경시키며 흐름제어 하는 기법이다.
+
+- **혼잡제어**란 네트워크의 혼잡을 피하기 우해 송신측에서 보내는 데이터의 전송 속도를 강제로 줄이게 되는데, 이러한 작업을 혼잡 제어라 한다.
+
+혼잡제어의 대표적인 방법으로는 **AIMD**와 **Slow Start**가 있다. 
+
+AIMD 방식은 트워크에 아직 별 문제가 없어서 전송 속도를 더 빠르게 하고 싶다면 혼잡 윈도우 크기를 1씩 증가시키지만, 중간에 데이터가 유실되거나 응답이 오지 않는 등의 혼잡 상태가 감지되면 혼잡 윈도우 크기를 반으로 줄인다.
+
+초기에 네트워크의 높은 대역폭을 사용하지 못하여 오랜 시간이 걸리게 되고, 네트워크가 혼잡해지는 상황을 미리 감지하지 못하는 문제가 있다.
+
+Slow Start 방식은 본적인 원리는 AIMD와 비슷하지만 윈도우 크기를 증가시킬 때는 지수적으로 증가시키다가 혼잡이 감지되면 윈도우 크기를 **`1`**로 줄여버리는 방식이다. AIMD 방식에 비해 초기에 지수적으로 증가하기 때문에 높은 대역폭을 활용할 수 있다는 장점이 있다.
+
+fast retransport
+
+fast recovery (exponential하게 임계치 전까지)
+
+---
+
+# 로드 밸런싱
+
+**✅ 로드 밸런싱(Load Balancing) 에 대해 말해보세요.**
+
+A.  로드 밸런싱은 주로 서버 구축 및 활용 시에 고려하는데요. 간단하게 말씀드리면 **서버에 가해지는 부하를 적절하게 분산시켜주는 장치 또는 기술**을 뜻합니다. 처음에 구축했던 서버가 수용할 수 있는 범위보다 더 큰 트래픽으로 기존 서버를 사용할 수 없게 되는 경우가 있습니다. 이 때 서버 트래픽을 분산시키기 위해 사용합니다.
+
+**✅ 서버 확장의 두 가지 방법(Scale-Up, Scale-Out) 에 대해 설명해보세요.**
+
+A.  **Scale-Up 방식은 서버 자체의 성능을 향상시키는 것**으로, 서버 CPU, RAM 등을 교체하여 서버의 성능을 향상시킵니다.
+
+반면, **Scale-Out 방식은 기존 서버와 동일하거나 낮은 서버를 여러 대 증설하여 운영하는 것**을 뜻합니다. 보통 Scale-Out 방식을 사용하는데, 그 이유는 서버 성능을 향상시키는 것보다 여러 대의 서버를 증설하는 것이 비용적 측면에서 효과적이기 때문입니다.
+
+**✅  로드 밸런싱 알고리즘 중 대표적인 라운드 로빈, 최소 연결 방식 에 대해 설명해보세요.**
+
+A.  라운드 로빈(Round Robin) 알고리즘은 **서버에 들어오는 요청들을 순서대로 돌아가면서 배정하는 알고리즘**입니다. 뭐가되었든 하나씩 배정하기 때문에 여러 대의 서버 성능이 비슷하고 세션이 오래 지속되지 않는 경우에 적합합니다.
+
+반면, 최소 연결 방식(Least Connection Method) 은 요청이 서버에 들어왔을 때 **가장 연결이 적은 서버에 배정하는 알고리즘**입니다. 서버 트래픽이 일정하지 않고 세션이 길어질 때 적합합니다.
+
+이 외에도 서버마다 가중치를 매겨 가중치에 맞게 요청을 배정하는 **가중 라운드 로빈** **방식**, 클라이언트의 IP주소를 해싱하여 분배하는 **IP 해싱 방식**, 서버의 현재 연결 상태와 응답 시간을 고려하여 배분하는 **최소 리스폰 타임** 알고리즘이 있습니다.
+
+**✅ 로드 밸런싱이란 무엇인가요?**
+
+분산식 웹 서비스로 여러 서버에 부하(Load)를 나누어 줌, Round Robin, Least Connection, Response Time, Hash 등의 기법이 있음
+
+1) Round Robin : 각 서버에 session을 순서대로 연결하는 방식, 모든 클라이언트를 똑같이 취급 하고, 서버별 처리량을 기억하고 있어야 함
+
+2) Least Connextion : 클라이언트와 서버별 연결된 connection 수를 고려하여 가장 적은 서버에 연결하는 방식
+
+로드 밸런싱은 api gateway나 proxy서버 등에서 주로 처리한다.
+
+1대의 서버가 모든 트래픽을 감당하기 힘들기 떄문에 하드웨어의 성능을 높이거나, 여러대의 서버가 나눠서 일을 하도록 한다.
+
+이 때 여러 서버가 균등하게 트래픽을 감당하는 것을 로드 밸런싱이라고 한다.
+
+**✅ 로드밸런싱 처리방식**
+
+1. Round Robbin: CPU 스케쥴링 방식처럼 시간을 두고 돌림
+2. Least Connections: 연결 개수가 가장 적은 서버 선택
+3. Source: 사용자IP를 해싱해서 분배 - 특정 사용자가 항상 같은 서버로 연결
+
+**✅ 장애 대비**
+
+- 로드 밸런서 자체에 문제가 생길 수 있기 때문에 로드 밸런서를 이중화 하여야함
+- 많은 트래픽이 발생할 경우 어떤식으로 대처할 수 있나요?
+
+**✅  L4 로드 밸런싱과 L7 로드 밸런싱에 대해 설명하고, 차이를 말해보세요.**
+
+A.  L4 로드 밸런싱은 **Layer 4**(네트워크 계층 또는 트랜스포트(전송) 계층) 의 정보를 바탕으로 트래픽을 분산하는 방식입니다. 즉, TCP, UDP, IP 정보들을 바탕으로 분산하는데요. 이는 정보가 어떻게 생겼는지 보지 않고 **패킷 레벨에서만 트래픽을 분산**하기 때문에 속도가 빠르고 효율성이 높습니다. 그리고 L7 로드 밸런싱보다 저렴합니다.
+
+반면, L7 로드 밸런싱은 **Layer 7**(애플리케이션(응용) 계층) 의 정보를 바탕으로 요청을 분산합니다. **HTTP Header, Cookie 등과 같이 사용자가 요청한 정보들을 바탕으로 트래픽을 분산**하기 때문에 섬세한 라우팅이 가능하고 비정상적인 트래픽을 판별할 수 있습니다. 하지만, L4 로드 밸런싱보다 비용이 높습니다.
+
+---
+
+# 캐시
+
+**✅ 캐시의 장단점과 어떤 부분에 활용하는지 설명해주세요.**
+
+> 캐시의 장점으로는 디스크나 네트워크에서 데이터를 가져오는 것보다 훨씬 빠른 속도로 데이터에 접근할 수 있습니다. 또한 매번 데이터를 새로 요청하는 것보다 캐시를 사용하면 서버 부하를 줄이고, 빠른 응답 시간과 성능 개선 효과를 얻을 수 있습니다.
+> 
+> 
+> 단점으로는 캐시에 저장할 수 있는 데이터의 양이 메모리 용량에 따라 한계가 있어 큰 용량의 데이터를 다루기가 어렵습니다. 또한 코드의 복잡성이 증가해 관리와 유지보수에 대한 비용이 증가할 수 있습니다.
+>
