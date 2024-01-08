@@ -1,5 +1,7 @@
 ### **⬛ CS Study for tech interview**
 
+![Untitled (10)](https://github.com/722dydwns/CS-Study-for-tech-interview/assets/39732720/0a02f872-d0a4-4e58-a261-76f1966a08da)
+
 # [네트워크 섹션](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network)
 
 ### **[1) 1주차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/1%EC%A3%BC%EC%B0%A8)**
