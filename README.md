@@ -13,3 +13,7 @@
 ### [3) 3회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/3%ED%9A%8C%EC%B0%A8)
 
 : TCP/UDP 정리, 로드밸런싱, 캐시 등 정리
+
+### [4) 4회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/4%ED%9A%8C%EC%B0%A8)
+
+: OSI 7 계층, TCP/IP 4계층, CORS 에 대한 정리
