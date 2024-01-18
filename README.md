@@ -12,14 +12,22 @@
 
 ### [3) 3회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/3%ED%9A%8C%EC%B0%A8)
 
-: TCP/UDP 정리, 로드밸런싱, 캐시 등 정리
+: TCP/UDP 정리, 로드밸런싱, 캐시 등 정리 
 
 ### [4) 4회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/4%ED%9A%8C%EC%B0%A8)
 
-: OSI 7 계층, TCP/IP 4계층, CORS 에 대한 정리
+: OSI 7 계층, TCP/IP 4계층, CORS 에 대한 정리 
 
 # [운영체제 섹션](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/5%ED%9A%8C%EC%B0%A8)
 
 ### [5) 5회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/5%ED%9A%8C%EC%B0%A8)
 
-: 프로세스, 스레드, 멀티 프레세스, 멀티 스레드, PCB 등 정리
+: 프로세스, 스레드, 멀티 프레세스, 멀티 스레드, PCB 등 정
+
+### [6) 6회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/6%ED%9A%8C%EC%B0%A8)
+
+: 메모리 구조, 데이터/힙/스택/코드 영역 : 선언하면 어느 쪽 저장되는가 정리 
+
+### [7) 7회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/7%ED%9A%8C%EC%B0%A8)
+
+: 가상 메모리, 메모리 관리 기법, 메모리 할당 방식, 내부 단편화, 외부 단편화 등 정리
