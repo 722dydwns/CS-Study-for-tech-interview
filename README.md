@@ -31,3 +31,6 @@
 ### [7) 7회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/7%ED%9A%8C%EC%B0%A8)
 
 : 가상 메모리, 메모리 관리 기법, 메모리 할당 방식, 내부 단편화, 외부 단편화 등 정리
+### [8) 8회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/8%ED%9A%8C%EC%B0%A8)
+
+: 데드락, 데드락 조건 4가지, 동기화(뮤텍스,세마포어,모니터,스핀락,어토믹) 등 정
