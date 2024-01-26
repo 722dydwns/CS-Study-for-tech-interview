@@ -32,4 +32,4 @@
 
 ### [8) 8회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Operating%20System/8%ED%9A%8C%EC%B0%A8)
 
-: 데드락, 데드락 조건 4가지, 동기화(뮤텍스,세마포어,모니터,스핀락,어토믹) 등 정
+: 데드락, 데드락 조건 4가지, 동기화(뮤텍스,세마포어,모니터,스핀락,어토믹) 등 정리
