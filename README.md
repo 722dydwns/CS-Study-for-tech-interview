@@ -39,3 +39,7 @@
 ### [10) 10회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Database/10%ED%9A%8C%EC%B0%A8)
 
 : 데이터베이스 개요와 쿼리 관련 정리
+
+### [11) 11회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Database/11%ED%9A%8C%EC%B0%A8)
+
+: 정규화와 역정규화 관련 정리
