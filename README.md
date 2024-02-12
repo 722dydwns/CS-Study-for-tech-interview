@@ -43,3 +43,7 @@
 ### [11) 11회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Database/11%ED%9A%8C%EC%B0%A8)
 
 : 정규화와 역정규화 관련 정리
+
+### [12) 12회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Database/12%ED%9A%8C%EC%B0%A8)
+
+: DB 인덱스, B-Tree, B+Tree, 해시 테이블 , DB 튜닝, DB 다중화 관련 정리
