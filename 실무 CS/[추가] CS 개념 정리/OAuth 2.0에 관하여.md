@@ -12,7 +12,6 @@ OAuth = Open Authorization
 
 OAuth 1.0과 OAuth 2.0 모두 API 봥ㄴ을 위한 프로토콜이다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e2aaace0-24ef-4ae8-bed4-d8cb2e34acd9/2e914a55-2a1c-424f-b36e-db324a052485/Untitled.png)
 
 ### 1) 토큰 갱신
 
@@ -63,7 +62,6 @@ OAuth 1.0과 OAuth 2.0 모두 API 봥ㄴ을 위한 프로토콜이다.
 
 ### **中 Authorization Code Grant 방식 과정**
 
-![166139288-61b86220-5cd8-4ee3-b577-4d437abdfa5c.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e2aaace0-24ef-4ae8-bed4-d8cb2e34acd9/2383f456-b001-4706-b1c8-1adb923e121d/166139288-61b86220-5cd8-4ee3-b577-4d437abdfa5c.png)
 
 **1) User가 Client에 사용 요청을 보낸다.**
 
