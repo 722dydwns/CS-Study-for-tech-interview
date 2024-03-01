@@ -10,8 +10,7 @@ OAuth = Open Authorization
 
 ## **OAuth 1.0과 2.0 차이점**
 
-OAuth 1.0과 OAuth 2.0 모두 API 봥ㄴ을 위한 프로토콜이다.
-
+OAuth 1.0과 OAuth 2.0 모두 API 보안을 위한 프로토콜이다.
 
 ### 1) 토큰 갱신
 
