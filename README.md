@@ -2,11 +2,11 @@
 
 ### [네트워크 섹션](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network)
 
-**[1) 1회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/1%ED%9A%8C%EC%B0%A8)** 
+[1) 1회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/1%ED%9A%8C%EC%B0%A8) 
 
 : HTTP 관련 내용 
 
-**[2) 2회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/2%ED%9A%8C%EC%B0%A8)** 
+[2) 2회차 CS 스터디](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/Network/2%ED%9A%8C%EC%B0%A8) 
 
 : URL 입력 시 일어나는 일, 쿠키 세션 토큰 웹 스토리지 등 비교 
 
@@ -54,8 +54,6 @@
 
 : DB 트랜잭션, 트랜잭션 격리 수준, 동시성 제어, 회복 관련 정리
 
-
-
 **👉실무 관련 CS 관련 내용 정리**
 
 [[웹 Web ]](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/%EC%8B%A4%EB%AC%B4%20CS/%EC%9B%B9%20(Web)%20%EA%B4%80%EB%A0%A8%20%EC%A7%88%EB%AC%B8%20%EB%AA%A8%EC%9D%8C) 
@@ -68,8 +66,8 @@
 
 : 웹서버 vs WAS, MSA, Monolithic, MVC 패턴 등 질문 정리
 
-[[프로그래밍 공통]](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/%EC%8B%A4%EB%AC%B4%20CS/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B3%B5%ED%86%B5)
+[[프로그래밍 공통 ]](https://github.com/722dydwns/CS-Study-for-tech-interview/tree/main/%EC%8B%A4%EB%AC%B4%20CS/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B3%B5%ED%86%B5)
 
-[1) 프로그래밍 공통 질문 - (1)](https://github.com/722dydwns/CS-Study-for-tech-interview/blob/main/%EC%8B%A4%EB%AC%B4%20CS/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B3%B5%ED%86%B5/1)%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B3%B5%ED%86%B5.md)
+[1) 프로그래밍 공통 관련 질문 - (1)](https://github.com/722dydwns/CS-Study-for-tech-interview/blob/main/%EC%8B%A4%EB%AC%B4%20CS/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B3%B5%ED%86%B5/1)%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B3%B5%ED%86%B5.md) 
 
 : Sync-ASync(동기, 비동기), 블로킹 논블로킹, 다양한 개발론, 네이티브 앱, 웹앱,PWA 등 질문 정리
